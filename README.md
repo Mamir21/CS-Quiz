@@ -15,7 +15,7 @@ To run the quiz app locally, follow these steps:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/quiz-app.git
+    git clone https://github.com/Mamir21/quiz-app.git
     ```
 
 2. Navigate to the project directory:
