@@ -3,20 +3,23 @@ body {
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    color: #fff; /* Text color for better contrast */
+    color: #333; /* Text color for better contrast */
 }
 
 .container {
     max-width: 600px;
-    margin: auto;
+    margin: 50px auto; /* Center the container with more space at the top */
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
 }
 
 .btn {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    border: none;
-    color: #333; /* Dark text color */
+    background-color: #f4f4f4;
+    border: 2px solid #333; /* Outline border */
+    color: #333;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -29,7 +32,8 @@ body {
 }
 
 .btn:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Lighten background color on hover */
+    background-color: #333;
+    color: #fff; /* Text color change on hover */
 }
 
 .btn.selected {
@@ -39,12 +43,17 @@ body {
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Wider buttons */
+    gap: 20px;
+    margin-top: 30px; /* Increased margin top */
 }
 
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+.score {
+    font-size: 24px;
+    margin-top: 30px;
 }
