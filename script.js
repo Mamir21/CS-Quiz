@@ -6,8 +6,10 @@ const questionContainer = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
+const scoreDisplay = document.getElementById('score');
 
 let currentQuestionIndex = 0;
+let score = 0;
 
 function startQuiz() {
     showQuestion(questions[currentQuestionIndex]);
@@ -20,7 +22,7 @@ function showQuestion(question) {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
-        button.addEventListener('click', () => selectAnswer(answer));
+        button.addEventListener('click', () => selectAnswer(answer, button));
         answerButtonsElement.appendChild(button);
     });
     nextButton.disabled = true; // Disable next button by default
@@ -32,7 +34,7 @@ function clearAnswerButtons() {
     }
 }
 
-function selectAnswer(answer) {
+function selectAnswer(answer, button) {
     // Remove 'selected' class from all buttons
     const buttons = document.querySelectorAll('#answer-buttons .btn');
     buttons.forEach(button => {
@@ -40,10 +42,11 @@ function selectAnswer(answer) {
     });
 
     // Add 'selected' class to the clicked button
-    event.target.classList.add('selected');
+    button.classList.add('selected');
 
     if (answer.correct) {
         // Handle correct answer
+        score++;
         console.log('Correct!');
     } else {
         // Handle wrong answer
@@ -60,8 +63,13 @@ function nextQuestion() {
         nextButton.disabled = true;
     } else {
         // Quiz ends
+        showScore();
         console.log('Quiz completed!');
     }
+}
+
+function showScore() {
+    scoreDisplay.innerText = `Your score: ${score}/${questions.length}`;
 }
 
 const questions = [
