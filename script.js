@@ -22,10 +22,9 @@ function showQuestion(question) {
         button.classList.add('btn');
         button.addEventListener('click', () => selectAnswer(answer));
         answerButtonsElement.appendChild(button);
-    })
-    nextButton.disabled = true;
+    });
+    nextButton.disabled = true; // Disable next button by default
 }
-
 
 function clearAnswerButtons() {
     while (answerButtonsElement.firstChild) {
@@ -34,6 +33,15 @@ function clearAnswerButtons() {
 }
 
 function selectAnswer(answer) {
+    // Remove 'selected' class from all buttons
+    const buttons = document.querySelectorAll('#answer-buttons .btn');
+    buttons.forEach(button => {
+        button.classList.remove('selected');
+    });
+
+    // Add 'selected' class to the clicked button
+    event.target.classList.add('selected');
+
     if (answer.correct) {
         // Handle correct answer
         console.log('Correct!');
@@ -41,6 +49,7 @@ function selectAnswer(answer) {
         // Handle wrong answer
         console.log('Wrong answer');
     }
+
     nextButton.disabled = false;
 }
 
