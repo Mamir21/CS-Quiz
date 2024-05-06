@@ -22,8 +22,10 @@ function showQuestion(question) {
         button.classList.add('btn');
         button.addEventListener('click', () => selectAnswer(answer));
         answerButtonsElement.appendChild(button);
-    });
+    })
+    nextButton.disabled = true;
 }
+
 
 function clearAnswerButtons() {
     while (answerButtonsElement.firstChild) {
