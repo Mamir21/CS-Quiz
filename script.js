@@ -79,7 +79,6 @@ const questions = [
             { text: 'Hyperlinks and Text Markup Language', correct: false },
             { text: 'Hypertext Markup Language', correct: true },
             { text: 'Home Tool Markup Language', correct: false },
-            { text: 'Hyper Text Manipulation Language', correct: false }
         ]
     },
     {
@@ -87,7 +86,6 @@ const questions = [
         answers: [
             { text: '4', correct: false },
             { text: '"22"', correct: true },
-            { text: '22', correct: false },
             { text: 'Error', correct: false }
         ]
     },
@@ -95,7 +93,6 @@ const questions = [
         question: 'Which sorting algorithm has the worst-case time complexity of O(n^2)?',
         answers: [
             { text: 'Merge Sort', correct: false },
-            { text: 'Quick Sort', correct: false },
             { text: 'Bubble Sort', correct: true },
             { text: 'Insertion Sort', correct: false }
         ]
@@ -103,7 +100,6 @@ const questions = [
     {
         question: 'What is the name of the data structure that follows the Last In, First Out (LIFO) principle?',
         answers: [
-            { text: 'Queue', correct: false },
             { text: 'Heap', correct: false },
             { text: 'Stack', correct: true },
             { text: 'Tree', correct: false }
@@ -115,13 +111,11 @@ const questions = [
             { text: 'Python', correct: false },
             { text: 'C++', correct: false },
             { text: 'HTML', correct: true },
-            { text: 'Java', correct: false }
         ]
     },
     {
         question: 'What is the main purpose of CSS?',
         answers: [
-            { text: 'To define the structure of a webpage', correct: false },
             { text: 'To define the behavior of a webpage', correct: false },
             { text: 'To define the presentation of a webpage', correct: true },
             { text: 'To define the functionality of a webpage', correct: false }
@@ -133,7 +127,6 @@ const questions = [
             { text: 'Encapsulation', correct: false },
             { text: 'Polymorphism', correct: true },
             { text: 'Inheritance', correct: false },
-            { text: 'Abstraction', correct: false }
         ]
     },
     {
@@ -141,7 +134,6 @@ const questions = [
         answers: [
             { text: 'GET', correct: false },
             { text: 'POST', correct: false },
-            { text: 'DELETE', correct: false },
             { text: 'INSERT', correct: true }
         ]
     },
@@ -150,7 +142,6 @@ const questions = [
         answers: [
             { text: 'Structured Query Language', correct: true },
             { text: 'Sequential Query Language', correct: false },
-            { text: 'Simple Query Language', correct: false },
             { text: 'Structured Question Language', correct: false }
         ]
     },
@@ -160,7 +151,6 @@ const questions = [
             { text: 'RAM', correct: false },
             { text: 'ROM', correct: true },
             { text: 'Cache', correct: false },
-            { text: 'Registers', correct: false }
         ]
     }
 ]
