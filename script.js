@@ -10,7 +10,7 @@ const scoreDisplay = document.getElementById('score');
 
 let currentQuestionIndex = 0;
 let score = 0;
-
+ 
 function startQuiz() {
     showQuestion(questions[currentQuestionIndex]);
 }
