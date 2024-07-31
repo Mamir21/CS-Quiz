@@ -25,7 +25,7 @@ function showQuestion(question) {
         button.addEventListener('click', () => selectAnswer(answer, button));
         answerButtonsElement.appendChild(button);
     });
-    nextButton.disabled = true; // Disable next button by default
+    nextButton.disabled = true;
 }
 
 function clearAnswerButtons() {
@@ -35,21 +35,17 @@ function clearAnswerButtons() {
 }
 
 function selectAnswer(answer, button) {
-    // Remove 'selected' class from all buttons
     const buttons = document.querySelectorAll('#answer-buttons .btn');
     buttons.forEach(button => {
         button.classList.remove('selected');
     });
 
-    // Add 'selected' class to the clicked button
     button.classList.add('selected');
 
     if (answer.correct) {
-        // Handle correct answer
         score++;
         console.log('Correct!');
     } else {
-        // Handle wrong answer
         console.log('Wrong answer');
     }
 
@@ -62,7 +58,6 @@ function nextQuestion() {
         showQuestion(questions[currentQuestionIndex]);
         nextButton.disabled = true;
     } else {
-        // Quiz ends
         showScore();
         console.log('Quiz completed!');
     }
