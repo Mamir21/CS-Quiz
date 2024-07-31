@@ -2,6 +2,10 @@
 
 This is a simple quiz application built using HTML, CSS, and JavaScript. It allows users to take a quiz with multiple-choice questions on various topics, including computer science.
 
+## Demo
+
+![image](https://github.com/user-attachments/assets/53d626a1-a947-4adc-8c6c-837ee63eda08)
+
 ## Features
 
 - Displays one question at a time with multiple-choice answers.
