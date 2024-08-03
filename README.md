@@ -12,7 +12,7 @@ This is a simple quiz application built using HTML, CSS, and JavaScript. It allo
 - Users can select an answer and proceed to the next question.
 - Once all questions are answered, the quiz ends and the user can see their score.
 
-## Getting Started
+## Installation
 
 To run the quiz app locally, follow these steps:
 
